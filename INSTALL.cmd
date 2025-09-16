@@ -22,7 +22,7 @@ echo Installation started...
 echo.
 
 cd /d "%~dp0"
-setup.exe /configure config.xml
+setup.exe /configure configuration.xml
 
 echo.
 echo Setting up Office activation via KMS...
@@ -36,7 +36,7 @@ if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" (
 )
 
 :: Specify the KMS server
-cscript //nologo "%OSPP%" /sethst:172.31.2.34
+cscript //nologo "%OSPP%" /sethst:"ENTER YOUR KMS IP"
 
 :: Requesting activation
 cscript //nologo "%OSPP%" /act
@@ -47,4 +47,5 @@ cscript //nologo "%OSPP%" /dstatus
 echo.
 echo Installation and activation complete. Press any key to exit...
 pause >nul
+
 exit
