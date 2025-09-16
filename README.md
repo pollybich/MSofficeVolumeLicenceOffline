@@ -29,3 +29,7 @@ After receiving the offline installer:
 1. Copy the provided **`INSTALL.cmd`** file into the same folder where `setup.exe` and `configuration.xml` are located.  
 2. Right-click **`INSTALL.cmd`** and choose **Run as Administrator**.  
 3. The script will start installation and activation automatically.
+
+## Licensing setup
+
+In order for the script to be able to take licenses from your KMS, you need to enter the IP in line 39
